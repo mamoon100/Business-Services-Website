@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "utilities";
+
+$paragraph-font-family: "Inter", sans-serif;
+$heading-font-family: "Montserrat", sans-serif;
+
+@mixin default-font-style {
+    font-size: px-to-rem(14);
+    line-height: px-to-rem(22);
+    font-weight: 400;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-family: $heading-font-family;
+    margin: 0;
+    p {
+        font-family: $paragraph-font-family;
+    }
+    @include default-font-style;
+
+    button.mat-mdc-unelevated-button {
+        @include default-font-style;
+    }
+
+    button.mat-mdc-button {
+        @include default-font-style;
+    }
+}

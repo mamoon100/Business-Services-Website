@@ -1,0 +1,23 @@
+@import "color-variable";
+
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+button {
+  padding: 0 12px;
+  border-radius: 18px;
+}
+
+button.mat-mdc-unelevated-button:not(:disabled) {
+  background-color: $primary-500;
+  color: white;
+}
+
+button.mat-mdc-button:not(:disabled) {
+  color: $primary-500;
+}

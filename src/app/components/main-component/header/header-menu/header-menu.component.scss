@@ -1,0 +1,19 @@
+@import "utilities";
+@import "color-variable";
+
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  p {
+    cursor: pointer;
+    white-space: nowrap;
+    color: $neutral-650;
+
+    &:hover {
+      color: $primary-500;
+    }
+  }
+}
