@@ -1,14 +1,19 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { MatIcon, MatIconModule } from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { IconEnum } from '../../../constant/IconEnum';
-import { HttpClientModule } from '@angular/common/http';
 import { HeaderActionComponent } from './header-action/header-action.component';
 import { NavigationComponent } from '../navigation/navigation.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatIconModule, NavigationComponent, HeaderActionComponent],
+  imports: [
+    MatIconModule,
+    NavigationComponent,
+    HeaderActionComponent,
+    RouterModule,
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })

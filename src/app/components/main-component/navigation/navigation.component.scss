@@ -6,7 +6,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
 }
 
 a {
@@ -14,6 +13,7 @@ a {
     cursor: pointer;
     white-space: nowrap;
     color: $neutral-650;
+    padding: 0 12px;
     &:hover {
         color: $primary-500;
     }
