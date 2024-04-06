@@ -1,13 +1,38 @@
+@import "media";
+
 :host {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  padding: 16px 0;
 }
 
-mat-icon {
+div {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+@include small-screen {
+  app-navigation {
+    display: none;
+  }
+  :host {
+    justify-content: space-between;
+  }
+}
+@include large-screen {
+  mat-icon:nth-child(1) {
+    display: none;
+  }
+}
+
+mat-icon:nth-child(2) {
   width: 97px;
   height: 32px;
-  padding: 16px 0;
 }

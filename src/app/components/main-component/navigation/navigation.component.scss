@@ -1,0 +1,26 @@
+@import "utilities";
+@import "color-variable";
+
+:host {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    color: $neutral-650;
+    &:hover {
+        color: $primary-500;
+    }
+    &.router-link-active {
+        background-color: $primary-500;
+        color: white;
+        border-radius: 18px;
+        padding: 0 12px;
+    }
+}

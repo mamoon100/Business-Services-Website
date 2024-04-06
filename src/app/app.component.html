@@ -1,1 +1,8 @@
-<app-header></app-header>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over">
+    <app-side-navigation></app-side-navigation>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-main-body (toggleSidenav)="sidenav.toggle()"></app-main-body>
+  </mat-sidenav-content>
+</mat-sidenav-container>

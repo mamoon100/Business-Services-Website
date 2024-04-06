@@ -18,7 +18,8 @@ $heading-font-family: "Montserrat", sans-serif;
 body {
     font-family: $heading-font-family;
     margin: 0;
-    p {
+    p,
+    a {
         font-family: $paragraph-font-family;
     }
     @include default-font-style;

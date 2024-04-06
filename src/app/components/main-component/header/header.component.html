@@ -1,5 +1,8 @@
-<mat-icon [svgIcon]="icons.LOGO"></mat-icon>
+<div>
+  <mat-icon (click)="onToggleSidenav()">menu</mat-icon>
+  <mat-icon [svgIcon]="icons.LOGO"></mat-icon>
+</div>
 
-<app-header-menu></app-header-menu>
+<app-navigation></app-navigation>
 
 <app-header-action></app-header-action>
